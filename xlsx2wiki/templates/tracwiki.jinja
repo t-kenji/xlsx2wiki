@@ -1,4 +1,4 @@
-||{% for col in rows[0] %}= {{ col.value }} =||{% endfor %}
+||{% for col in rows[0] %}= {% if col.value %}{{ col.value }}{% endif %} =||{% endfor %}
 {% for row in rows[1:] -%}
-{%- for col in row %}|| {{ col.value }} {% endfor %}||
+{%- for col in row %}|| {% if col.value %}{{ col.value }}{% endif %} {% endfor %}||
 {% endfor %}
