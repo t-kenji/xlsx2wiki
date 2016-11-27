@@ -32,7 +32,7 @@ def run_(args):
         args = sys.argv[1:]
     if args:
         if args[0] in ('-h', '--help', 'help'):
-            print('usage: {} file-name sheet-name transform-range output-name template'.format(sys.argv[0]))
+            print('usage: {} file-name sheet-name transform-range template'.format(sys.argv[0]))
             return 0
         elif args[0] in ('-v', '--version'):
             print('{} {}'.format(os.path.basename(sys.argv[0]), VERSION))
